@@ -1,0 +1,89 @@
+html {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+thead{
+  background: linear-gradient(#dbeafe, #93c5fd);
+  font-weight: bold;
+  height: 30px;
+}
+
+tbody {
+  font-size: 0.9rem;
+}
+
+tr[class="read"] {
+  background: linear-gradient(#dcfce7, #86efac);
+}
+
+tr[class="to-read"] {
+  background: linear-gradient(#f1f5f9, #cbd5e1);
+}
+
+tr[class="in-progress"] {
+  background: linear-gradient(#fffef2, #fef9c3);
+}
+
+span {
+  display: inline-block;
+}
+
+td {
+  min-width: 140px;
+  padding:  2px 8px;
+  text-align: center;
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 2px solid red;
+  border-radius: 90px;
+  padding: 2px 4px;
+  background: linear-gradient(#fee2e2, red);
+}
+
+tr[class="read"] span[class="status"] {
+  border: 2px solid green;
+  border-radius: 90px;
+  padding: 2px 4px;
+  background: linear-gradient(#86efac, #22c55e);
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 2px solid yellow;
+  border-radius: 90px;
+  padding: 2px 4px;
+  background: linear-gradient(#fef3c7, #fbbf24);
+}
+span[class="status"], span[class^="rate"] {
+  height: 20px;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+}
+
+span[class^="rate"] > span {
+  height: 20px;
+  width: 20px;
+  border: 2px solid lightgray;
+  border-radius: 20px;
+  margin: 1px 2px;
+  background-color: white;
+}
+
+span[class~="one"] span:first-child {
+  background: linear-gradient(#fef9c3, #fde047);
+}
+span[class~="two"] span:nth-child(-n + 2) {
+  background: linear-gradient(#fef9c3, #fde047);
+}
+span[class~="three"] span {
+  background: linear-gradient(#fef9c3, #fde047);
+}
