@@ -1,0 +1,50 @@
+#playing-cards {
+  display: flex;
+  background-color: #DDA0DD;
+  border: 2px solid black;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 215px;
+  height: 310px;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow:2px 2px 8px black;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.left {
+  display: flex;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.right {
+  display: flex;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.hearts, .diamonds {
+  color: red;
+}
+
+.flipped {
+  transform: rotate(180deg);
+}
