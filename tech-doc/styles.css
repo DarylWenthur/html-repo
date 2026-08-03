@@ -1,0 +1,51 @@
+@media (min-width: 768px) {
+  body {
+    font-size: 1.25rem;
+  }
+}
+
+html {
+  font-family: Arial, sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: 100vh;
+  padding: 10px;
+  border: 1px solid darkgray;
+}
+#navbar header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#navbar a {
+  display:block;
+  width: 100%;
+  padding: 10px 5px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid darkgray;
+}
+
+#main-doc {
+  margin-left: 290px;
+}
+.main-section header {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+p, ul{
+  line-height: 1.5;
+}
+
+code {
+  font-family: monospace;
+  background-color: lightgray;
+  font-weight: bold;
+}
